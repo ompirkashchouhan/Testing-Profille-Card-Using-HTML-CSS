@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <p id="linked"><a href="profile.html" target="_blank">2nd Page</a></p>
+    <div class="container">
+        <div class="main-nav">
+            <img src="Images/iskillers logo.jpg" alt="iskillers" id="iskillimg">
+            <p id="logotext">Kodecolor</p>
+            <input type="search" name="Search" placeholder="Search" id="search-input">
+            <div class="uldiv">
+                <ul>
+                    <li>Find Peoples</li>
+                    <li>Messages <span>4</span></li>
+                    <li>My Contact</li>
+                </ul>
+            </div>
+            <img src="Images/photo-profil_---.jpg" alt="pro" id="profile-img">
+        </div><hr>
+        <div class="second-section">
+            <div class="stDiv">
+                <img src="Images/photo-profil_---.jpg" alt="profile-pic">
+                <div class="flex">
+                    <p class="contct-info">WORK ___________________________</p>
+                </div>
+                <div class="optional">
+                    <div>
+                    <h3>Spotify New York</h3><span>Primary</span>
+                    </div>
+                    <p class="pro">170 William Street<br>New York, NY 1027 45 789 909 32</p>
+                </div>
+                <div id="stational">
+                    <div>
+                    <h3>Metropolitan<br>Museum</h3><span>Secondary</span>
+                    </div>
+                    <p>525 E 68th Street<br>New York, NY 1062 35 899 566 90</p>
+                </div>
+                <div class="flex">
+                    <p class="contct-info">SKILLS __________________________</p>
+                </div>
+                <div class="serve">
+                    <p>Branding</p>
+                    <p>Ul/UX</p>
+                    <p>Web-Design</p>
+                    <p>Packaging</p>
+                    <p>Print & Editorial</p>
+                </div>
+            </div>
+            <div class="ndDiv">
+                <div class="headingwithpara">
+                    <p id="Jeremy">Jeremy Rose</p>
+                    <p class="Location"> <img src="Images/loaction.png" alt="location-icon"/> New York, NY</p>
+                    <p class="Bookmarks"><img src="Images/bookmark.png" alt="bookmarks-icon"> Bookmarks</p>
+                </div>
+                <p id="product">Product Designer</p>
+                <p class="ranking">RANKING</p>
+                <p class="text-rating">8,6 <img class="star-rating" src="Images/star.png" alt="star"> <img class="star-rating" src="Images/star.png" alt="star"> <img class="star-rating" src="Images/star.png" alt="star"> <img class="star-rating" src="Images/star.png" alt="star"> <img class="star-rating" src="Images/star (1).png" alt="star"></p>
+                <div class="send-button">
+                    <p id="sendmessage"><img src="Images/message.png" alt="msg" id="sendmsgimg"> Send message</p>
+                    <button class="button-cont">Contact</button>
+                    <p id="report-user">Report user</p>
+                </div>
+                <div class="time-about">
+                    <div class="w3-bar w3-black">
+                        <button class="w3-bar-item w3-button" onclick="openCity('London')" id="timeline-btn"><img src="Images/view.png" alt="view-icon" id="view-img"> Timeline</button>
+                        <button class="w3-bar-item w3-button" onclick="openCity('Paris')" id="about-btn"><img src="images/About.png" alt="About" id="about-img"> About</button>
+                      </div>
+                      
+                      <script>
+                      function openCity(cityName) {
+                        var i;
+                        var x = document.getElementsByClassName("city");
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        document.getElementById(cityName).style.display = "block";  
+                      }
+                      </script>
+                </div>
+                <hr>
+                <div class="clickdiv">
+                <div id="London" class="w3-container city">
+                    <p>Timeline</p>
+                    <p class="contct-info">CONTACT INFORMATION</p>
+                    <div class="information">
+                        <div class="one-div">
+                            <p class="parag">Phone:</p><p class="parag">Address:</p><p class="parag">Email:</p><p class="parag">Site:</p>
+                        </div>
+                        <div class="two-div">
+                            <p><a href="number:+1 123 456 7890">+1 123 456 7890</a></p>
+                           <p>525 E 68th Street<br>New York, NY 1062 35 899 566 90</p>
+                           <P><a href="mailto:hello@jeremyrose.com">hello@jeremyrose.com</a></P>
+                           <p><a href="www.jeremyrose.com">www.jeremyrose.com</a></p>
+                        </div>
+                    </div>
+                    <p class="contct-info">BASIC INFORMATION</p>
+                    <div class="main">
+                        <div id="op">
+                            <p class="parag">Birthday:</p><p class="parag">Gender:</p>
+                        </div>
+                        <div class="od">
+                            <p>June 5, 1992</p>
+                            <p>Male</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="Paris" class="w3-container city" style="display:none">
+                    <p>About</p>
+                    <p class="contct-info">CONTACT INFORMATION</p>
+                    <div class="information">
+                        <div class="one-div">
+                            <p class="parag">Phone:</p><p class="parag">Address:</p><p class="parag">Email:</p><p class="parag">Site:</p>
+                        </div>
+                        <div class="two-div">
+                            <p><a href="number:+1 123 456 7890">+1 123 456 7890</a></p>
+                           <p>525 E 68th Street<br>New York, NY 1062 35 899 566 90</p>
+                           <P><a href="mailto:hello@jeremyrose.com">hello@jeremyrose.com</a></P>
+                           <p><a href="www.jeremyrose.com">www.jeremyrose.com</a></p>
+                        </div>
+                    </div>
+                    <p class="contct-info">BASIC INFORMATION</p>
+                    <div class="main">
+                        <div id="op">
+                            <p class="parag">Birthday:</p><p class="parag">Gender:</p>
+                        </div>
+                        <div class="od">
+                            <p>June 5, 1992</p>
+                            <p>Male</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>

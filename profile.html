@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="profile.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+   <div class="container">
+    <div class="section-one">
+        <img src="Images/close-up-profile.jpg" alt="tim-cook-dp">
+        <h3>Tim Cook</h3>
+        <p id="ceo-text">CEO Of Apple</p><hr>
+        <div class="opportunities">
+            <p>Opportunities applied</p>
+            <p id="change-c">32</p>
+        </div><hr>
+        <div class="opportunities">
+            <p>Opportunities won</p>
+            <p id="change-p">26</p>
+        </div><hr><div class="opportunities">
+            <p>Current Opportunities</p>
+            <p id="number-bold">6</p>
+        </div><hr>
+        <button class="view-public">View Public Profile</button>
+        <button class="link-btn">https://domain.com/user<</button>
+    </div>
+    <div class="section-two">
+        <div class="Tabs">
+            <div class="buttons">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('London')">Account Setting</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Company Setting</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Notification</button>
+        </div>
+             </div>        
+        </div>
+          
+          <script>
+          function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            document.getElementById(cityName).style.display = "block";  
+          }
+          </script>
+          <hr>
+          <div id="London" class="w3-container city">
+            <div class="first">
+                <p class="input-para">First Name</p>
+                <input type="text" name="first" placeholder="First Name" class="inputs">
+                
+                <div class="division">
+                <p class="input-para">Phone Number</p>
+                <input type="number" name="first" placeholder="(408) 996-1010" class="inputs">
+                </div>
+                <p id="input-para">City</p>
+                <select id="selecto">
+                    <option value="New York">New York</option>
+                    <option value="USA">Banglore</option>
+                    <option value="UAE">Melbourne</option>
+                    <option value="India">Mumbai</option>
+                    <option value="Pakistan">Karachi</option>
+                </select>
+                <hr>
+                <div class="update">
+                    <button>Update</button>
+                </div>
+            </div>
+            <div class="last">
+                <p class="last-para">Last Name</p>
+                <input type="text" name="last" placeholder="Last Name" class="inputs">
+
+                <div class="division">
+                <p class="last-para">Email Address</p>
+                <input type="email" name="last" placeholder="tcook@apple.com" class="inputs" id="margin">
+                </div>
+                <p id="last-para">Country</p>
+                <select id="selectm">
+                    <option value="New York">America</option>
+                    <option value="USA">USA</option>
+                    <option value="UAE">UAE</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+                <hr>
+            </div>
+          </div>
+          
+          <div id="Paris" class="w3-container city" style="display:none">
+            <h1>Company Setting</h1>
+          </div>
+
+          <div id="Tokyo" class="w3-container city" style="display:none">
+            <h1>Notification</h1>
+          </div>  
+    </div>
+   </div> 
+</body>
+</html>
